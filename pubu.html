@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>javascriptÆÙ²¼Á÷</title>
+	<title>javascriptï¿½Ù²ï¿½ï¿½ï¿½</title>
 	<style type="text/css">
 		*{
 			margin: 0px;
@@ -32,7 +32,7 @@
 <body>
 	<div class="container" id="container">
 		<div class="box">
-			<div class="box_img"><img src="image/1.jpg" alt=""></div>
+			<div class="box_img"><img src="image/1.jpg" alt="">444</div>
 		</div>
 		<div class="box">
 			<div class="box_img"><img src="image/2.jpg" alt=""></div>
@@ -118,74 +118,74 @@
     	if(check_csroll()){
     		var dparent = document.getElementById("container");
     		for(var i = 0;i<img_data.data.length;i++){
-    			var dcontent = document.createElement("div");//´´½¨½Úµã
-    			dcontent.className = "box";//Îª½ÚµãÌí¼ÓÀàÃû
-    			dparent.appendChild(dcontent);//Ìí¼Ó¸ùÔªËØ
-    			var boximg = document.createElement("div");//´´½¨½Úµã
-    			boximg.className = "box_img";//Îª½ÚµãÌí¼ÓÀàÃû
-    			dcontent.appendChild(boximg);//Ìí¼Ó¸ùÔªËØ
-    			var img = document.createElement("img");//´´½¨½Úµã
-    			img.src = "image/"+img_data.data[i].src;//Í¼Æ¬¼ÓÔØÂ·¾¶
-    			boximg.appendChild(img);//Ìí¼Ó¸ùÔªËØ
+    			var dcontent = document.createElement("div");//ï¿½ï¿½ï¿½ï¿½ï¿½Úµï¿½
+    			dcontent.className = "box";//Îªï¿½Úµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+    			dparent.appendChild(dcontent);//ï¿½ï¿½Ó¸ï¿½Ôªï¿½ï¿½
+    			var boximg = document.createElement("div");//ï¿½ï¿½ï¿½ï¿½ï¿½Úµï¿½
+    			boximg.className = "box_img";//Îªï¿½Úµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+    			dcontent.appendChild(boximg);//ï¿½ï¿½Ó¸ï¿½Ôªï¿½ï¿½
+    			var img = document.createElement("img");//ï¿½ï¿½ï¿½ï¿½ï¿½Úµï¿½
+    			img.src = "image/"+img_data.data[i].src;//Í¼Æ¬ï¿½ï¿½ï¿½ï¿½Â·ï¿½ï¿½
+    			boximg.appendChild(img);//ï¿½ï¿½Ó¸ï¿½Ôªï¿½ï¿½
 			}
     	}
     }
 }
 function check_csroll(){
-	var dparent = document.getElementById("container");//»ñÈ¡¸¸ÔªËØ
-	var dcontent = get_child_element(dparent,"box");//»ñÈ¡×ÓÔªËØ¸öÊý
-	var last_content_height = dcontent[dcontent.length-1].offsetTop;//»ñÈ¡×îºóÒ»ÕÅÍ¼Æ¬µ½¶¥µÄ¾àÀë
-	var scroll_top = document.documentElement.scrollTop || document.body.scrollTop;//»ñÈ¡¹ö¶¯Ìõµ½¶¥µÄ¾àÀë
-	var page_height = document.documentElement.clientHeight || document.body.clientHeight;//»ñÈ¡ÆÁÄ»¸ß¶È
+	var dparent = document.getElementById("container");//ï¿½ï¿½È¡ï¿½ï¿½Ôªï¿½ï¿½
+	var dcontent = get_child_element(dparent,"box");//ï¿½ï¿½È¡ï¿½ï¿½Ôªï¿½Ø¸ï¿½ï¿½ï¿½
+	var last_content_height = dcontent[dcontent.length-1].offsetTop;//ï¿½ï¿½È¡ï¿½ï¿½ï¿½Ò»ï¿½ï¿½Í¼Æ¬ï¿½ï¿½ï¿½ï¿½ï¿½Ä¾ï¿½ï¿½ï¿½
+	var scroll_top = document.documentElement.scrollTop || document.body.scrollTop;//ï¿½ï¿½È¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä¾ï¿½ï¿½ï¿½
+	var page_height = document.documentElement.clientHeight || document.body.clientHeight;//ï¿½ï¿½È¡ï¿½ï¿½Ä»ï¿½ß¶ï¿½
 	if(last_content_height<scroll_top+page_height){
 		return true;
 	}
 }
 function img_location(parent, content) {
-    //È¡³öparentÏÂµÄËùÓÐcontentÈ«²¿×ÓÔªËØ
-    var dparent = document.getElementById(parent); //»ñÈ¡¸¸ÔªËØ
-    var dcontent = get_child_element(dparent, content); //»ñµÃ×ÓÔªËØ¸öÊý
+    //È¡ï¿½ï¿½parentï¿½Âµï¿½ï¿½ï¿½ï¿½ï¿½contentÈ«ï¿½ï¿½ï¿½ï¿½Ôªï¿½ï¿½
+    var dparent = document.getElementById(parent); //ï¿½ï¿½È¡ï¿½ï¿½Ôªï¿½ï¿½
+    var dcontent = get_child_element(dparent, content); //ï¿½ï¿½ï¿½ï¿½ï¿½Ôªï¿½Ø¸ï¿½ï¿½ï¿½
     //console.log(dcontent)
 
-    var dec_width = get_width(dparent, dcontent); //¹Ì¶¨¿í¶È
-    var image_location = min_image_locatin(dec_width, dcontent) //½«Í¼Æ¬·ÅÔÚ¸ß¶È×îµÍµÄÍ¼Æ¬ÏÂ
+    var dec_width = get_width(dparent, dcontent); //ï¿½Ì¶ï¿½ï¿½ï¿½ï¿½
+    var image_location = min_image_locatin(dec_width, dcontent) //ï¿½ï¿½Í¼Æ¬ï¿½ï¿½ï¿½Ú¸ß¶ï¿½ï¿½ï¿½Íµï¿½Í¼Æ¬ï¿½ï¿½
 
 
 }
 
-function get_child_element(parent, content) { //»ñµÃ×ÓÔªËØ¸öÊý
-    var content_array = []; //¶¨ÒåÊý×é
-    var all_content = parent.getElementsByTagName("*"); //È¡µÃ¸¸ÔªËØÏÂµÄµÄËùÓÐ×ÓÔªËØ
-    for (var i = 0; i < all_content.length; i++) { //Àú±éËùÓÐ×ÓÔªËØ
-        if (all_content[i].className == content) { //ÅÐ¶Ï×ÓÔªËØµÄÀàÃûÊÇ·ñµÈÓÚbox
-            content_array.push(all_content[i]) //ÔÚÊý×éºó×·¼ÓÔªËØ
+function get_child_element(parent, content) { //ï¿½ï¿½ï¿½ï¿½ï¿½Ôªï¿½Ø¸ï¿½ï¿½ï¿½
+    var content_array = []; //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+    var all_content = parent.getElementsByTagName("*"); //È¡ï¿½Ã¸ï¿½Ôªï¿½ï¿½ï¿½ÂµÄµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ôªï¿½ï¿½
+    for (var i = 0; i < all_content.length; i++) { //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ôªï¿½ï¿½
+        if (all_content[i].className == content) { //ï¿½Ð¶ï¿½ï¿½ï¿½Ôªï¿½Øµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ç·ï¿½ï¿½ï¿½ï¿½box
+            content_array.push(all_content[i]) //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½×·ï¿½ï¿½Ôªï¿½ï¿½
         }
     }
     return content_array;
 }
 
-function get_width(dparent, dcontent) { //¹Ì¶¨¿í¶È
-    var img_width = dcontent[1].offsetWidth; //»ñÈ¡Í¼Æ¬¿í¶È
+function get_width(dparent, dcontent) { //ï¿½Ì¶ï¿½ï¿½ï¿½ï¿½
+    var img_width = dcontent[1].offsetWidth; //ï¿½ï¿½È¡Í¼Æ¬ï¿½ï¿½ï¿½
     var win_width = dparent.offsetWidth;
-    /*var win_width = document.documentElement.clientWidth; //»ñÈ¡ÆÁÄ»¿í¶È*/
-    var num_width = Math.floor(win_width / img_width); //»ñµÃÒ»ÅÅ°ÚµÄ¸öÊý ÓÃMath.floor()×ª»»ÎªÕûÊý
-    dparent.style.cssText = "width:" + img_width * num_width + "px; margin:0 auto"; //¹Ì¶¨ÆÁÄ»µÄ¸ß²¢ÉèÖÃ¾ÓÖÐ
+    /*var win_width = document.documentElement.clientWidth; //ï¿½ï¿½È¡ï¿½ï¿½Ä»ï¿½ï¿½ï¿½*/
+    var num_width = Math.floor(win_width / img_width); //ï¿½ï¿½ï¿½Ò»ï¿½Å°ÚµÄ¸ï¿½ï¿½ï¿½ ï¿½ï¿½Math.floor()×ªï¿½ï¿½Îªï¿½ï¿½ï¿½ï¿½
+    dparent.style.cssText = "width:" + img_width * num_width + "px; margin:0 auto"; //ï¿½Ì¶ï¿½ï¿½ï¿½Ä»ï¿½Ä¸ß²ï¿½ï¿½ï¿½ï¿½Ã¾ï¿½ï¿½ï¿½
     return num_width;
 
 }
 
 function min_image_locatin(dec_width, dcontent) {
     var box_height_array = [];
-    for (var i = 0; i < dcontent.length; i++) { //±éÀúËùÓÐÍ¼Æ¬
+    for (var i = 0; i < dcontent.length; i++) { //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í¼Æ¬
         if (i < dec_width) {
-            box_height_array[i] = dcontent[i].offsetHeight; //È¡µÃµÚÒ»ÅÅÍ¼Æ¬µÄ¸ß¶È
+            box_height_array[i] = dcontent[i].offsetHeight; //È¡ï¿½Ãµï¿½Ò»ï¿½ï¿½Í¼Æ¬ï¿½Ä¸ß¶ï¿½
         } else {
-            var min_height = Math.min.apply(null, box_height_array); //»ñÈ¡µÚÒ»ÅÅÍ¼Æ¬ÖÐ¸ß¶È×îÐ¡µÄÍ¼Æ¬
-            var min_index = get_min_height(box_height_array, min_height) //º¯Êý»ñµÃ¸ß¶È×îÐ¡µÄÍ¼Æ¬µÄÎ»ÖÃ
-            dcontent[i].style.position = "absolute"; //¾ø¶Ô¶¨Î»Í¼Æ¬
-            dcontent[i].style.top = min_height + "px"; //Í¼Æ¬¾à¶¥²¿ÏñËØ
-            dcontent[i].style.left = dcontent[min_index].offsetLeft + "px"; //Í¼Æ¬¾à×óµÄÏñËØ
-            box_height_array[min_index] = box_height_array[min_index] + dcontent[i].offsetHeight; //×îÐ¡Í¼Æ¬µÄ¸ß¶È¼ÓÉÏÔÚËûºóÃæÍ¼Æ¬µÄ¸ß¶È
+            var min_height = Math.min.apply(null, box_height_array); //ï¿½ï¿½È¡ï¿½ï¿½Ò»ï¿½ï¿½Í¼Æ¬ï¿½Ð¸ß¶ï¿½ï¿½ï¿½Ð¡ï¿½ï¿½Í¼Æ¬
+            var min_index = get_min_height(box_height_array, min_height) //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ã¸ß¶ï¿½ï¿½ï¿½Ð¡ï¿½ï¿½Í¼Æ¬ï¿½ï¿½Î»ï¿½ï¿½
+            dcontent[i].style.position = "absolute"; //ï¿½ï¿½ï¿½Ô¶ï¿½Î»Í¼Æ¬
+            dcontent[i].style.top = min_height + "px"; //Í¼Æ¬ï¿½à¶¥ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+            dcontent[i].style.left = dcontent[min_index].offsetLeft + "px"; //Í¼Æ¬ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+            box_height_array[min_index] = box_height_array[min_index] + dcontent[i].offsetHeight; //ï¿½ï¿½Ð¡Í¼Æ¬ï¿½Ä¸ß¶È¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í¼Æ¬ï¿½Ä¸ß¶ï¿½
         }
     }
 
@@ -193,7 +193,7 @@ function min_image_locatin(dec_width, dcontent) {
 
 function get_min_height(box_height_array, min_height) {
     for (var i in box_height_array) {
-        if (box_height_array[i] == min_height) { //Ñ­»·ËùÓÐÊý×éµÄ¸ß¶È ÈÃËüµÈÓÚ×îÐ¡Í¼Æ¬µÄ¸ß¶È ·µ»ØiÖµ
+        if (box_height_array[i] == min_height) { //Ñ­ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä¸ß¶ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ð¡Í¼Æ¬ï¿½Ä¸ß¶ï¿½ ï¿½ï¿½ï¿½ï¿½iÖµ
             return i;
         }
     }
